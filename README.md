@@ -1,2 +1,2 @@
-# configs
-various config files
+## Configs
+Various configuration files
