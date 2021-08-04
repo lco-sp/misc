@@ -1,0 +1,44 @@
+I: Bus=0018 Vendor=3950 Product=5288 Version=0100
+N: Name="SYNA3602:00 3950:5288 Touchpad"
+P: Phys=i2c-SYNA3602:00
+S: Sysfs=/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-2/i2c-SYNA3602:00/0018:3950:5288.0001/input/input16
+U: Uniq=
+H: Handlers=mouse1 event7 
+B: PROP=5
+B: EV=1b
+B: KEY=e520 30000 0 0 0 0
+B: ABS=2e0800000000003
+B: MSC=20
+
+
+I: Bus=0018 Vendor=0416 Product=2397 Version=4020
+N: Name="Goodix Capacitive TouchScreen"
+P: Phys=input/ts
+S: Sysfs=/devices/pci0000:00/0000:00:15.2/i2c_designware.2/i2c-8/i2c-GDIX1001:00/input/input14
+U: Uniq=
+H: Handlers=kbd mouse3 event13 
+B: PROP=2
+B: EV=b
+B: KEY=400 0 0 0 2000000000000000 0
+B: ABS=265800000000003
+
+
+echo on | sudo tee /sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-2/i2c-SYNA3602:00/0018:3950:5288.0001/input/input16/power/control
+
+
+echo on | sudo tee /sys/devices/pci0000:00/0000:00:15.2/i2c_designware.2/i2c-8/i2c-GDIX1001:00/input/input14/power/control
+
+
+: Bus=0018 Vendor=3950 Product=5288 Version=0100
+N: Name="SYNA3602:00 3950:5288 Mouse"
+P: Phys=i2c-SYNA3602:00
+S: Sysfs=/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-2/i2c-SYNA3602:00/0018:3950:5288.0001/input/input15
+U: Uniq=
+H: Handlers=mouse0 event6 
+B: PROP=0
+B: EV=17
+B: KEY=70000 0 0 0 0
+B: REL=903
+B: MSC=10
+
+echo on | sudo tee /sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-2/i2c-SYNA3602:00/0018:3950:5288.0001/input/input15/power/control
