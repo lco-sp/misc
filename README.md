@@ -1,8 +1,7 @@
 ## Configs
-Various configuration files and minor scripts
+Various configuration files, minor scripts and miscelaneous stuff.
 
-https://www.reddit.com/r/linux/comments/ot6dkm/programmers_humor/h6tffjb/
-
+Note-to-self:
 Add
-Defaults insults
-to your /etc/sudoers file, and then sudo will output insults when typing the wrong password! No need to recompile!
+'Defaults insults'
+to /etc/sudoers file, and then sudo will output insults when typing the wrong password! No need to recompile!
